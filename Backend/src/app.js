@@ -15,6 +15,6 @@ app.get('/', (req, res) => {
 });
 
 // Rutas para /api/figuras
-app.use('/api/figuras', figurasRoutes);
-app.use('/api/users', usersRoutes);
+app.use('/figuras', figurasRoutes);
+app.use('/users', usersRoutes);
 module.exports = app;
