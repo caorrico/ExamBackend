@@ -1,8 +1,4 @@
-const express = require('express');
-const app = express();
-
-app.get('/', (req, res) => {
-  res.send('Hola desde Express en Vercel!');
-});
+const app = require('../src/app'); 
+// Ajusta la ruta según dónde tengas tu app.js
 
 module.exports = app;
