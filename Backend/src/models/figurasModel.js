@@ -7,7 +7,7 @@ const Figura = {
 
   create: (data, callback) => {
     db.query(
-      "INSERT INTO figuras (base, altura) VALUES (?, ?)",
+      "INSERT INTO figuras (base, altura, area) VALUES (?, ?, ?)",
       [data.base, data.altura],
       callback
     );
